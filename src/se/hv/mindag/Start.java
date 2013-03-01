@@ -65,8 +65,8 @@ public class Start extends ListActivity {
 	public void graceFullyExit() {
 		Log.e("NET", "No network.");
 		final AlertDialog.Builder myBuild = new AlertDialog.Builder(Start.this);
-		myBuild.setTitle("Ingen anslutning");
-		myBuild.setMessage("Du är inte ansluten till Internet. Utan en Internetanslutning kan du väl inte begära att jag ska kunna hämta din information?");
+		myBuild.setTitle(R.string.noNetworkTitle);
+		myBuild.setMessage(R.string.noNetworkText);
 		myBuild.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
 		
@@ -93,7 +93,7 @@ public class Start extends ListActivity {
 			graceFullyExit();
 		} else {
 			Log.i("NET", "Vi har nätverk.");
-			Toast.makeText(getApplicationContext(), "Laddar data...",
+			Toast.makeText(getApplicationContext(), R.string.networkLoading,
 					Toast.LENGTH_LONG).show();
 
 			Button login = (Button) findViewById(R.id.btnLogin);
@@ -141,7 +141,7 @@ public class Start extends ListActivity {
 					public void onItemClick(AdapterView<?> parent, View view,
 							int position, long id) {
 						Toast.makeText(getApplicationContext(),
-								"Laddar data...", Toast.LENGTH_LONG).show();
+								R.string.networkLoading, Toast.LENGTH_LONG).show();
 						// getting values from selected ListItem
 						String link = ((TextView) view
 								.findViewById(R.id.generalLink)).getText()
@@ -196,9 +196,9 @@ public class Start extends ListActivity {
 
 		case R.id.menuPrefs:
 			AlertDialog.Builder settingsPopup = new AlertDialog.Builder(this);
-			settingsPopup.setTitle("Inställningar");
+			settingsPopup.setTitle(R.string.menuPrefsTitle);
 			settingsPopup
-					.setMessage("Jättekul att du tryckte på den där knappen. Verkligen. Synd bara att den inte gör något. Hade den gjort något hade det säkert varit något fantastiskt som hade hänt.");
+					.setMessage(R.string.menuPrefsText);
 			settingsPopup.setNeutralButton("OK", null);
 			settingsPopup.show();
 

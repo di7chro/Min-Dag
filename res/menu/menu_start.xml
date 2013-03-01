@@ -8,7 +8,7 @@
     <item
         android:id="@+id/menuPrefs"
         android:icon="@drawable/icon_settings"
-        android:title="@string/menuPrefsTxt"/>
+        android:title="@string/menuPrefsTitle"/>
     <item
         android:id="@+id/menuTwitter"
         android:icon="@drawable/icon_twitter"

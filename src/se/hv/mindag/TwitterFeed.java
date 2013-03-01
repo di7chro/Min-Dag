@@ -43,7 +43,7 @@ public class TwitterFeed extends ListActivity {
 
         protected void onPreExecute() {
             progressDialog = ProgressDialog.show(TwitterFeed.this, "",
-                    "Laddar Tweets...", true);
+                    "Laddar Tweets", true);
         }
 
         @Override

@@ -47,7 +47,7 @@ public class Login extends Activity {
 			
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(),
-						"Kollar dina uppgifter...", Toast.LENGTH_LONG).show();
+						R.string.checkingLoginText, Toast.LENGTH_LONG).show();
 				// Loginknappen har klickats. Kolla uppgifterna
 				EditText username = (EditText) findViewById(R.id.tfUsername);
 				EditText password = (EditText) findViewById(R.id.tfPassword);
@@ -118,8 +118,7 @@ public class Login extends Activity {
 	/**
 	 * Creates a hash of the input String
 	 * 
-	 * @param Username
-	 *            and Password
+	 * @param bytes of username+password
 	 * @return The hash-value
 	 */
 	private static String bytesToHexString(byte[] bytes) {
@@ -139,8 +138,8 @@ public class Login extends Activity {
 	 */
 	private void showWrongLoginPopup() {
 		AlertDialog.Builder myBuild = new AlertDialog.Builder(this);
-		myBuild.setTitle("Fel inloggning");
-		myBuild.setMessage("De uppgifter som du skrev in stämmer inte. Logga in med de uppgifter som du fått av IT-enheten vid Högskolan Väst.");
+		myBuild.setTitle(R.string.wrongLoginTitle);
+		myBuild.setMessage(R.string.wrongLoginText);
 		myBuild.setNeutralButton("OK", null);
 		myBuild.show();
 	}

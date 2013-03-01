@@ -7,10 +7,32 @@
     <string name="btnLoginText">Logga in</string>
     <string name="usernameHint">Användarnamn</string>
     <string name="passwordHint">Lösenord</string>
-    <string name="txtAbout">Denna app har utvecklats av Crille, Malin, Johan och Victor. Om du visste hur mycket blod som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe.</string>
+    <string name="txtAbout">Denna app har utvecklats av Crille, Malin, Johan och Victor. Om du visste hur mycket blod
+        som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe.
+    </string>
     <string name="twitterTitle">Tweets från Högskolan Väst</string>
     <string name="menuAboutTxt">Om appen</string>
-    <string name="menuPrefsTxt">Inställningar</string>
+    <string name="menuPrefsTitle">Inställningar</string>
+    <string name="menuPrefsText">Jättekul att du tryckte på den där knappen. Verkligen. Synd bara att den inte gör
+        något. Hade den gjort något hade det säkert varit något fantastiskt som hade hänt.
+    </string>
     <string name="menuTwitterTxt">HV på Twitter</string>
+    <string name="wrongLoginTitle">Fel inloggning</string>
+    <string name="wrongLoginText">De uppgifter som du skrev in stämmer inte. Logga in med de uppgifter som du fått av
+        IT-enheten vid Högskolan Väst.
+    </string>
+    <string name="checkingLoginText">Kollar dina uppgifter...</string>
+    <string name="menuSaveTitle">Spara dina loginuppgifter</string>
+    <string name="menuSaveText">Här kan vi implementera en SQLlite-databas för att spara uppgifterna man matade in.
+    </string>
+    <string name="menuMailTitle">Kolla mail</string>
+    <string name="menuMailText">Öppnar helt enkelt en WebView till studenternas Live-mail sida. Vi behöver inte ta med
+        någon login eller så, bara öppna en WebView.
+    </string>
+    <string name="noNetworkTitle">Ingen anslutning</string>
+    <string name="noNetworkText">Du är inte ansluten till Internet. Utan en Internetanslutning kan du väl inte begära
+        att jag ska kunna hämta din information?
+    </string>
+    <string name="networkLoading">Laddar data...</string>
 
 </resources>
