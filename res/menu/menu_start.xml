@@ -4,14 +4,14 @@
     <item
         android:id="@+id/menuAbout"
         android:icon="@drawable/icon_about"
-        android:title="Om appen"/>
+        android:title="@string/menuAboutTxt"/>
     <item
         android:id="@+id/menuPrefs"
         android:icon="@drawable/icon_settings"
-        android:title="Inställningar"/>
+        android:title="@string/menuPrefsTxt"/>
     <item
         android:id="@+id/menuTwitter"
         android:icon="@drawable/icon_twitter"
-        android:title="HV på Twitter"/>
+        android:title="@string/menuTwitterTxt"/>
 
 </menu>

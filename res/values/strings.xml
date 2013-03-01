@@ -9,5 +9,8 @@
     <string name="passwordHint">Lösenord</string>
     <string name="txtAbout">Denna app har utvecklats av Crille, Malin, Johan och Victor. Om du visste hur mycket blod som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe.</string>
     <string name="twitterTitle">Tweets från Högskolan Väst</string>
+    <string name="menuAboutTxt">Om appen</string>
+    <string name="menuPrefsTxt">Inställningar</string>
+    <string name="menuTwitterTxt">HV på Twitter</string>
 
 </resources>
