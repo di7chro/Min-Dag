@@ -48,10 +48,10 @@ public class MyDay extends ListActivity {
 		super.onCreate(savedInstanceState);
 		Intent in = getIntent();
 
-		// Den personliga URL inneh�llande URL samt app_key=HEMLIG_HASH
+		// Den personliga URL innehållande URL samt app_key=HEMLIG_HASH
 		String url = in.getExtras().getString("URL");
 
-		// Riktiga namnet p� den inloggade anv�ndaren
+		// Riktiga namnet på den inloggade användaren
 		String realName = in.getExtras().getString("REALNAME");
 
 		try {
@@ -143,7 +143,7 @@ public class MyDay extends ListActivity {
 			AlertDialog.Builder savePopup = new AlertDialog.Builder(this);
 			savePopup.setTitle("Spara dina loginuppgifter");
 			savePopup
-					.setMessage("H�r kan vi implementera en SQLlite-databas f�r att spara uppgifterna man matade in.");
+					.setMessage("Här kan vi implementera en SQLlite-databas för att spara uppgifterna man matade in.");
 			savePopup.setNeutralButton("OK", null);
 			savePopup.show();
 
@@ -153,7 +153,7 @@ public class MyDay extends ListActivity {
 			AlertDialog.Builder mailPopup = new AlertDialog.Builder(this);
 			mailPopup.setTitle("Kolla mail");
 			mailPopup
-					.setMessage("�ppnar helt enkelt en WebView till studenternas Live-mail sida. Vi beh�ver inte ta med n�gon login eller s�, bara �ppna en WebView.");
+					.setMessage("Öppnar helt enkelt en WebView till studenternas Live-mail sida. Vi behöver inte ta med någon login eller så, bara öppna en WebView.");
 			mailPopup.setNeutralButton("OK", null);
 			mailPopup.show();
 

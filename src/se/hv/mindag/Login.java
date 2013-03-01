@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class Login extends Activity {
 
 	// Login URL to server. if login correct the full user name is returned -
-	// else the string "Ingen anv�ndare":
+	// else the string "Ingen användare":
 	private static final String loginURL = "http://mittkonto.hv.se/public/appfeed/login_response.php?app_key=";
 	// Login to min sida returns XML
 	private static final String loginXML_URL = "https://mittkonto.hv.se/public/appfeed/app_rss.php?app_key=";
@@ -75,7 +75,7 @@ public class Login extends Activity {
 
 					String[] urlHash = { loginString };
 
-					// call thread tr�den and execute doinBackground in
+					// call thread tråden and execute doinBackground in
 					// Logindata;
 					loginUser.execute(urlHash);
 
@@ -87,7 +87,7 @@ public class Login extends Activity {
 					if (arrayList.get(0).contains("Ingen anv")) {
 						showWrongLoginPopup();
 					} else {
-						// loginResult.setText("V�lkommen "+arrayList.get(0));
+						// loginResult.setText("Välkommen "+arrayList.get(0));
 						LoginData loginData = new LoginData();
 
 						// Appends the hash to the URL
@@ -107,7 +107,7 @@ public class Login extends Activity {
 					e1.printStackTrace();
 				}
 
-				// Malin: tillagt f�r att f�nga ev ytterligare exceptions
+				// Malin: tillagt för att fånga ev ytterligare exceptions
 				catch (Exception e1) {
 					e1.printStackTrace();
 				}
@@ -140,7 +140,7 @@ public class Login extends Activity {
 	private void showWrongLoginPopup() {
 		AlertDialog.Builder myBuild = new AlertDialog.Builder(this);
 		myBuild.setTitle("Fel inloggning");
-		myBuild.setMessage("De uppgifter som du skrev in st�mmer inte. Logga in med de uppgifter som du f�tt av IT-enheten vid H�gskolan V�st.");
+		myBuild.setMessage("De uppgifter som du skrev in stämmer inte. Logga in med de uppgifter som du fått av IT-enheten vid Högskolan Väst.");
 		myBuild.setNeutralButton("OK", null);
 		myBuild.show();
 	}

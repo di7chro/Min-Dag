@@ -66,7 +66,7 @@ public class Start extends ListActivity {
 		Log.e("NET", "No network.");
 		final AlertDialog.Builder myBuild = new AlertDialog.Builder(Start.this);
 		myBuild.setTitle("Ingen anslutning");
-		myBuild.setMessage("Du �r inte ansluten till Internet. Utan en Internetanslutning kan du v�l inte beg�ra att jag ska kunna h�mta din information?");
+		myBuild.setMessage("Du är inte ansluten till Internet. Utan en Internetanslutning kan du väl inte begära att jag ska kunna hämta din information?");
 		myBuild.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
 		
@@ -92,7 +92,7 @@ public class Start extends ListActivity {
 		if (!isOnline()) {
 			graceFullyExit();
 		} else {
-			Log.i("NET", "Vi har n�tverk.");
+			Log.i("NET", "Vi har nätverk.");
 			Toast.makeText(getApplicationContext(), "Laddar data...",
 					Toast.LENGTH_LONG).show();
 
@@ -158,7 +158,7 @@ public class Start extends ListActivity {
 				});
 
 			} catch (InterruptedException e) {
-				Log.e("IE", "Interupted");
+				Log.e("IE", "Interrupted");
 				e.printStackTrace();
 			} catch (ExecutionException e) {
 				Log.e("EXE", "Execution");
@@ -183,29 +183,29 @@ public class Start extends ListActivity {
 	}
 
 	/**
-	 * Handles the different kinds of buttons wich can be pressed in the current
+	 * Handles the different kinds of buttons which can be pressed in the current
 	 * Activitys menu
 	 */
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menuAbout:
 			Log.i("Menu", "About");
-			Intent showAbout = new Intent("se.hv.dindag.ABOUT");
+			Intent showAbout = new Intent("se.hv.mindag.ABOUT");
 			startActivity(showAbout);
 			break;
 
 		case R.id.menuPrefs:
 			AlertDialog.Builder settingsPopup = new AlertDialog.Builder(this);
-			settingsPopup.setTitle("Inst�llningar");
+			settingsPopup.setTitle("Inställningar");
 			settingsPopup
-					.setMessage("J�ttekul att du tryckte p� den d�r knappen. Verkligen. Synd bara att den inte g�r n�got. Hade den gjort n�got hade det s�kert varit n�got fantastiskt som hade h�nt.");
+					.setMessage("Jättekul att du tryckte på den där knappen. Verkligen. Synd bara att den inte gör något. Hade den gjort något hade det säkert varit något fantastiskt som hade hänt.");
 			settingsPopup.setNeutralButton("OK", null);
 			settingsPopup.show();
 
 			break;
 
 		case R.id.menuTwitter:
-			Intent showTwitter = new Intent("se.hv.dindag.TWITTER");
+			Intent showTwitter = new Intent("se.hv.mindag.TWITTER");
 			startActivity(showTwitter);
 
 			break;
