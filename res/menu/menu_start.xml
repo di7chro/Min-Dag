@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuAbout"
+        android:icon="@drawable/icon_about"
+        android:title="Om appen"/>
+    <item
+        android:id="@+id/menuPrefs"
+        android:icon="@drawable/icon_settings"
+        android:title="Inställningar"/>
+    <item
+        android:id="@+id/menuTwitter"
+        android:icon="@drawable/icon_twitter"
+        android:title="HV på Twitter"/>
+
+</menu>

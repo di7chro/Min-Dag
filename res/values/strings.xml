@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Min Dag</string>
-    <string name="txtHello">This is just a Test</string>
+
+    <string name="app_name">Din Dag på HV</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="btnLoginText">Logga in</string>
+    <string name="usernameHint">Användarnamn</string>
+    <string name="passwordHint">Lösenord</string>
+    <string name="txtAbout">Denna app har utvecklats av Crille, Malin, Johan och Victor. Om du visste hur mycket blod som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe.</string>
+    <string name="twitterTitle">Tweets från Högskolan Väst</string>
+
 </resources>
