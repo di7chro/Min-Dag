@@ -4,7 +4,6 @@ import android.R;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -32,13 +31,11 @@ public class Settings extends ListActivity {
             // Starting new intent
             Intent inTwitter = new Intent("se.hv.mindag.SETTINGSTWITTER");
             startActivity(inTwitter);
-        }
-        if (position == 1) {
+        } else if (position == 1) {
             // Starting new intent
             Intent inMail = new Intent("se.hv.mindag.SETTINGSMAIL");
             startActivity(inMail);
-        }
-        if (position == 2) {
+        } else if (position == 2) {
             // Starting new intent
             Intent inSave = new Intent("se.hv.mindag.SETTINGSSAVE");
             startActivity(inSave);
