@@ -1,76 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="se.hv.mindag"
-    android:versionCode="1"
-    android:versionName="1.0" >
+          package="se.hv.mindag"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="17" />
+            android:minSdkVersion="9"
+            android:targetSdkVersion="17"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:allowBackup="true"
-        android:clearTaskOnLaunch="true"
-        android:icon="@drawable/icon_gubben"
-        android:label="@string/app_name"
-        android:theme="@style/hvTheme" >
-        <activity
-            android:name="se.hv.mindag.Start"
+            android:allowBackup="true"
             android:clearTaskOnLaunch="true"
-            android:label="@string/app_name" >
+            android:icon="@drawable/icon_gubben"
+            android:label="@string/app_name"
+            android:theme="@style/hvTheme">
+        <activity
+                android:name="se.hv.mindag.Start"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="se.hv.mindag.WebReader"
-            android:clearTaskOnLaunch="true"
-            android:label="@string/app_name" >
+                android:name="se.hv.mindag.WebReader"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.WEBREADER" />
+                <action android:name="android.intent.action.WEBREADER"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="se.hv.mindag.Login"
-            android:clearTaskOnLaunch="true"
-            android:label="@string/app_name" >
+                android:name="se.hv.mindag.Login"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/app_name">
         </activity>
         <activity
-            android:name="se.hv.mindag.MyDay"
-            android:clearTaskOnLaunch="true"
-            android:label="@string/app_name" >
+                android:name="se.hv.mindag.MyDay"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/app_name">
         </activity>
         <activity
-            android:name="se.hv.mindag.DinDagMenu"
-            android:clearTaskOnLaunch="true"
-            android:label="@string/app_name" >
+                android:name="se.hv.mindag.DinDagMenu"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/app_name">
         </activity>
         <activity
-            android:name="se.hv.mindag.AboutUs"
-            android:clearTaskOnLaunch="true"
-            android:label="Om appen"
-            android:theme="@android:style/Theme.Dialog" >
+                android:name="se.hv.mindag.AboutUs"
+                android:clearTaskOnLaunch="true"
+                android:label="Om appen"
+                android:theme="@android:style/Theme.Dialog">
             <intent-filter>
-                <action android:name="se.hv.mindag.ABOUT" />
+                <action android:name="se.hv.mindag.ABOUT"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="se.hv.mindag.TwitterFeed"
-            android:clearTaskOnLaunch="true"
-            android:label="@string/twitterTitle" >
+                android:name="se.hv.mindag.TwitterFeed"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/twitterTitle">
             <intent-filter>
-                <action android:name="se.hv.mindag.TWITTER" />
+                <action android:name="se.hv.mindag.TWITTER"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="se.hv.mindag.Settings"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/menuPrefsTitle">
+            <intent-filter>
+                <action android:name="se.hv.mindag.SETTINGS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="se.hv.mindag.SettingsTwitter"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/menuSettingsTwitterTitle">
+            <intent-filter>
+                <action android:name="se.hv.mindag.SETTINGSTWITTER"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="se.hv.mindag.SettingsMail"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/menuSettingsMailTitle">
+            <intent-filter>
+                <action android:name="se.hv.mindag.SETTINGSMAIL"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="se.hv.mindag.SettingsLogin"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/menuSettingsLoginTitle">
+            <intent-filter>
+                <action android:name="se.hv.mindag.SETTINGSSAVE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>

@@ -34,5 +34,8 @@
         att jag ska kunna hämta din information?
     </string>
     <string name="networkLoading">Laddar data...</string>
+    <string name="menuSettingsTwitterTitle">Inställningar för Twitter</string>
+    <string name="menuSettingsMailTitle">Inställningar för Mail</string>
+    <string name="menuSettingsLoginTitle">Inställningar för Login</string>
 
 </resources>

@@ -29,14 +29,14 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:paddingBottom="4dip"
-            android:textColor="#acacac"
+            android:textColor="@color/hv_txtColor"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/mydayDescription"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="#acacac"
+            android:textColor="@color/hv_txtColor"
             android:textSize="14sp" />
 
         <TextView
