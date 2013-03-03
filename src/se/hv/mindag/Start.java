@@ -197,6 +197,16 @@ public class Start extends ListActivity {
                 Intent showTwitter = new Intent("se.hv.mindag.TWITTER");
                 startActivity(showTwitter);
                 break;
+            case R.id.menuMail:
+                Intent showMail = new Intent(getApplicationContext(), WebReader.class);
+                showMail.putExtra("KEY_LINK", "http://mail.google.com");
+                startActivity(showMail);
+                break;
+            case R.id.menuTTela:
+                Intent showTTela = new Intent(getApplicationContext(), WebReader.class);
+                showTTela.putExtra("KEY_LINK", "http://m.ttela.se");
+                startActivity(showTTela);
+                break;
         }
         return false;
     }

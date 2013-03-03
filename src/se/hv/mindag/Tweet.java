@@ -8,4 +8,5 @@ public class Tweet {
 	String text;
 	String date;
 	String pic;
+    String url;
 }

@@ -1,12 +1,9 @@
 package se.hv.mindag;
 
-import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import android.widget.AdapterView.OnItemClickListener;
@@ -115,44 +112,5 @@ public class MyDay extends ListActivity {
         }
     }
 
-    /**
-     * Displays the menu for the startup screen
-     */
-    @Override
-    public boolean onCreateOptionsMenu(android.view.Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater blowUp = getMenuInflater();
-        blowUp.inflate(R.menu.menu_loggedin, menu);
-        return true;
-    }
 
-    /**
-     * Handles the different kinds of buttons wich can be pressed in the current
-     * Activitys menu
-     */
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menuSave:
-                AlertDialog.Builder savePopup = new AlertDialog.Builder(this);
-                savePopup.setTitle(R.string.menuSaveTitle);
-                savePopup
-                        .setMessage(R.string.menuSaveText);
-                savePopup.setNeutralButton("OK", null);
-                savePopup.show();
-
-                break;
-
-            case R.id.menuMail:
-                AlertDialog.Builder mailPopup = new AlertDialog.Builder(this);
-                mailPopup.setTitle(R.string.menuMailTitle);
-                mailPopup
-                        .setMessage(R.string.menuMailText);
-                mailPopup.setNeutralButton("OK", null);
-                mailPopup.show();
-
-                break;
-
-        }
-        return false;
-    }
 }

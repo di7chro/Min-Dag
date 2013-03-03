@@ -24,10 +24,12 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class TwitterFeed extends ListActivity {
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
@@ -35,10 +37,10 @@ public class TwitterFeed extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new MyTask().execute();
+        new TwitterFeedDownloader().execute();
     }
 
-    private class MyTask extends AsyncTask<Void, Void, Void> {
+    private class TwitterFeedDownloader extends AsyncTask<Void, Void, Void> {
         private ProgressDialog progressDialog;
 
         protected void onPreExecute() {
@@ -91,16 +93,30 @@ public class TwitterFeed extends ListActivity {
      * @return Polished date
      */
     private String prettyfyDate(String theDate) {
-        SimpleDateFormat sdf = new SimpleDateFormat(
+        SimpleDateFormat format = new SimpleDateFormat(
                 "EEE, dd MMM yyyy HH:mm:ss z", Locale.getDefault());
-        Date date = null;
-        try {
-            date = sdf.parse(theDate);
-            theDate = new SimpleDateFormat("dd MMM @ HH:mm").format(date);
 
-        } catch (Exception e) {
+        Date past = null;
+        try {
+
+            past = format.parse(theDate);
+            Date now = new Date();
+            long diff = TimeUnit.MILLISECONDS.toMinutes(now.getTime() - past.getTime());
+
+            if (diff < 60)
+                theDate = diff + " minuter sedan";
+            else if (diff < 60 * 24)
+                theDate = diff / 24 + " timmar, " + diff%60 + " minuter sedan";
+            else if (diff < 60 * 60 * 24) {
+                if ((diff / 60 / 24) == 1)
+                    theDate = diff / 60 / 24 + " dag, " + diff%24  + " timmar sedan";
+                else
+                    theDate = diff / 60 / 24 + " dagar, " + diff%24  + " timmar sedan";
+            }
+        } catch (ParseException e) {
             e.printStackTrace();
         }
+
         return theDate;
     }
 
