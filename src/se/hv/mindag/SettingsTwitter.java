@@ -12,6 +12,6 @@ public class SettingsTwitter extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.settings_twitter);
     }
 }

@@ -29,15 +29,15 @@ public class Settings extends ListActivity {
 
         if (position == 0) {
             // Starting new intent
-            Intent inTwitter = new Intent("se.hv.mindag.SETTINGSTWITTER");
+            Intent inTwitter = new Intent(this, SettingsTwitter.class);
             startActivity(inTwitter);
         } else if (position == 1) {
             // Starting new intent
-            Intent inMail = new Intent("se.hv.mindag.SETTINGSMAIL");
+            Intent inMail = new Intent(this, SettingsMail.class);
             startActivity(inMail);
         } else if (position == 2) {
             // Starting new intent
-            Intent inSave = new Intent("se.hv.mindag.SETTINGSSAVE");
+            Intent inSave = new Intent(this, SettingsLogin.class);
             startActivity(inSave);
         }
 

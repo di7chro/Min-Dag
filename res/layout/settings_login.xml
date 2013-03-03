@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/tableLayout1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+    <TextView
+            android:id="@+id/settingLoginTextHint"
+            android:text="@string/settingLoginText"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+    <!-- 2 kolumner -->
+    <TableRow
+            android:id="@+id/settingLoginUserRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/settingLoginUsernameText"
+                android:text="@string/settingsUsernameText"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-</LinearLayout>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/settingsUsername" android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/settingLoginPassRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+        <TextView
+                android:id="@+id/settingLoginPasswordText"
+                android:text="@string/settingsPasswordText"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/settingsPassword" android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingLoginOK"
+                android:id="@+id/button" android:layout_column="1"/>
+    </TableRow>
+
+</TableLayout>

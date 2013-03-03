@@ -87,31 +87,16 @@
                 android:name="se.hv.mindag.SettingsTwitter"
                 android:clearTaskOnLaunch="true"
                 android:label="@string/menuSettingsTwitterTitle">
-            <intent-filter>
-                <action android:name="se.hv.mindag.SETTINGSTWITTER"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
         </activity>
         <activity
                 android:name="se.hv.mindag.SettingsMail"
                 android:clearTaskOnLaunch="true"
                 android:label="@string/menuSettingsMailTitle">
-            <intent-filter>
-                <action android:name="se.hv.mindag.SETTINGSMAIL"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
         </activity>
         <activity
                 android:name="se.hv.mindag.SettingsLogin"
                 android:clearTaskOnLaunch="true"
                 android:label="@string/menuSettingsLoginTitle">
-            <intent-filter>
-                <action android:name="se.hv.mindag.SETTINGSSAVE"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
         </activity>
     </application>
 

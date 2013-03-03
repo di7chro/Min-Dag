@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Din Dag på HV</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Min Dag på HV</string>
     <string name="menu_settings">Settings</string>
     <string name="btnLoginText">Logga in</string>
     <string name="usernameHint">Användarnamn</string>
@@ -37,5 +36,39 @@
     <string name="menuSettingsTwitterTitle">Inställningar för Twitter</string>
     <string name="menuSettingsMailTitle">Inställningar för Mail</string>
     <string name="menuSettingsLoginTitle">Inställningar för Login</string>
+    <string name="settingsUsernameText">Username</string>
+    <string name="settingsPasswordText">Password</string>
+    <string name="settingLoginOK">Spara inloggning</string>
+    <string name="settingLoginText">Ange dina inloggningsuppgifter för att komma åt dina resurser på Högskolan Väst. Du
+        skall ange samma uppgifter här som du använder för att komma åt Högskolans övriga resurser.
+    </string>
+    <string name="settingsTwitterHint">Ange ditt val för vilken Twitterström du vill följa. Det kan antingen vara Högskolans officiella ström, tweets taggade #hogskolan_vast eller en egen vald sökterm.</string>
+    <string name="settingTwitterOfficialText">Högskolans officiella kanal</string>
+    <string name="settingTwitterTaggat">Taggat om Högskolan Väst</string>
+    <string name="settingTwitterEget">Egen sökterm</string>
+    <string name="settingMailHint">Ange vilken som skall vara din läsare för Webmail. Du kan välja mellan att öppna din GMail, Windows Live eller en egen vald webbmail.</string>
+    <string name="settingMailGmail">GMail</string>
+    <string name="settingMailLive">Live</string>
+    <string name="settingMailEget">Egen Webmail</string>
 
+
+    <!--
+
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+        <string name=""></string>
+    -->
 </resources>
