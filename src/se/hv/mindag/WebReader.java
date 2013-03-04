@@ -3,8 +3,9 @@ package se.hv.mindag;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.WebView;
 import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.Toast;
 
 /**
  * Opens up a new WebView and loads the URL of the chosen element from the feed
@@ -28,6 +29,8 @@ public class WebReader extends Activity {
         setContentView(R.layout.activity_webreader);
         Intent in = getIntent();
         String url = in.getExtras().getString("KEY_LINK");
+        Toast.makeText(getApplicationContext(), R.string.networkLoading,
+                Toast.LENGTH_LONG).show();
 
         try {
             WebSinglePost gsn = new WebSinglePost();

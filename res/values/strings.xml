@@ -7,7 +7,9 @@
     <string name="usernameHint">Användarnamn</string>
     <string name="passwordHint">Lösenord</string>
     <string name="txtAbout">Denna app har utvecklats av Crille, Malin, Johan och Victor. Om du visste hur mycket blod
-        som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe.
+        som ligger bakom utvecklingen av den här appen skulle du omedelbart springa hit och bjuda oss på kaffe. Tycker
+        du att appen kan förbättras? Du kan ladda hem källkoden till appen från GitHub:
+        http://github.com/di7chro/Min-Dag
     </string>
     <string name="twitterTitle">Tweets från Högskolan Väst</string>
     <string name="menuAboutTxt">Om appen</string>
@@ -42,11 +44,15 @@
     <string name="settingLoginText">Ange dina inloggningsuppgifter för att komma åt dina resurser på Högskolan Väst. Du
         skall ange samma uppgifter här som du använder för att komma åt Högskolans övriga resurser.
     </string>
-    <string name="settingsTwitterHint">Ange ditt val för vilken Twitterström du vill följa. Det kan antingen vara Högskolans officiella ström, tweets taggade #hogskolan_vast eller en egen vald sökterm.</string>
+    <string name="settingsTwitterHint">Ange ditt val för vilken Twitterström du vill följa. Det kan antingen vara
+        Högskolans officiella ström, tweets taggade #hogskolan_vast eller en egen vald sökterm.
+    </string>
     <string name="settingTwitterOfficialText">Högskolans officiella kanal</string>
     <string name="settingTwitterTaggat">Taggat om Högskolan Väst</string>
     <string name="settingTwitterEget">Egen sökterm</string>
-    <string name="settingMailHint">Ange vilken som skall vara din läsare för Webmail. Du kan välja mellan att öppna din GMail, Windows Live eller en egen vald webbmail.</string>
+    <string name="settingMailHint">Ange vilken som skall vara din läsare för Webmail. Du kan välja mellan att öppna din
+        GMail, Windows Live eller en egen vald webbmail.
+    </string>
     <string name="settingMailGmail">GMail</string>
     <string name="settingMailLive">Live</string>
     <string name="settingMailEget">Egen Webmail</string>

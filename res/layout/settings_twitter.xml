@@ -4,73 +4,48 @@
              android:id="@+id/tableLayout2"
              android:layout_width="fill_parent"
              android:layout_height="fill_parent">
-    <TextView
-            android:id="@+id/hgdhjdgjgf"
-            android:text="@string/settingsTwitterHint"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"/>
-    <!-- 2 kolumner -->
-    <TableRow
-            android:id="@+id/gsdfhdfsh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dip">
-
-        <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
-        <TextView
-                android:id="@+id/gashash"
-                android:text="@string/settingTwitterOfficialText" android:layout_column="1"/>
-
-    </TableRow>
-    <TableRow
-            android:id="@+id/gsdfhdfsh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dip">
-
-        <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
-        <TextView
-                android:id="@+id/gashash"
-                android:text="@string/settingTwitterTaggat" android:layout_column="1"/>
-
-    </TableRow>
-    <TableRow
-            android:id="@+id/gsdfhdfsh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dip">
-
-        <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
-        <TextView
-                android:id="@+id/gashash"
-                android:text="@string/settingTwitterEget" android:layout_column="1"/>
-
-    </TableRow>
-    <TableRow
+    <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsTwitterRadio">
+        <TextView
+                android:id="@+id/hgdhjdgjgf"
+                android:text="@string/settingsTwitterHint"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"/>
+
+
+        <RadioButton
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingTwitterOfficialText"
+                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
+
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingTwitterTaggat"
+                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
+
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingTwitterEget"
+                android:id="@+id/settingsTwitterEget" android:layout_column="0" android:checked="false"/>
+
+
+        <EditText
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/settingTwitterEgetText" android:layout_column="1"/>
-    </TableRow>
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="OK"
                 android:id="@+id/settingTwitterOKButton" android:layout_column="1"/>
-    </TableRow>
+    </RadioGroup>
 </TableLayout>
 

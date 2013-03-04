@@ -55,7 +55,7 @@
         <activity
                 android:name="se.hv.mindag.AboutUs"
                 android:clearTaskOnLaunch="true"
-                android:label="Om appen"
+                android:label="Om Min Dag"
                 android:theme="@android:style/Theme.Dialog">
             <intent-filter>
                 <action android:name="se.hv.mindag.ABOUT"/>

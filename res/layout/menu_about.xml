@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:paddingTop="6dip"
         android:text="@string/txtAbout"
-        android:textColor="@color/general_title"
-        android:textSize="14sp" />
+        android:textColor="@color/hv_txtColor"/>
 
 </LinearLayout>

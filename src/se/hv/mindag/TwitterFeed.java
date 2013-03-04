@@ -3,6 +3,7 @@ package se.hv.mindag;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -11,9 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.*;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
@@ -68,6 +67,7 @@ public class TwitterFeed extends ListActivity {
                         tweet.date = prettyfyDate(session
                                 .getString("created_at"));
                         tweet.pic = session.getString("profile_image_url");
+                        //tweet.url = session.getString("url");
                         tweets.add(tweet);
                     }
                 }
@@ -162,6 +162,7 @@ public class TwitterFeed extends ListActivity {
                                 ArrayList<Tweet> items) {
             super(context, textViewResourceId, items);
             this.tweets = items;
+
         }
 
         @Override
@@ -181,6 +182,7 @@ public class TwitterFeed extends ListActivity {
             tvFrom.setText("@" + o.from);
             tvDate.setText(o.date);
             tvText.setText(o.text);
+
             return v;
         }
     }

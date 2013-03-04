@@ -68,6 +68,7 @@ public class MyDay extends ListActivity {
             setListAdapter(adapter);
 
             ListView lv = (ListView) findViewById(R.id.myDayList);
+
             for (int i = 0; i <= myDayItems.size(); i++) {
                 String theTag = myDayItems.get(i).get(KEY_TAG);
                 if (theTag.contains("schema")) {
@@ -87,6 +88,7 @@ public class MyDay extends ListActivity {
 
                 public void onItemClick(AdapterView<?> parent, View view,
                                         int position, long id) {
+                    Log.i("XXX", "Sak tryckt");
                     // getting values from selected ListItem
                     String link = ((TextView) view.findViewById(R.id.mydayLink))
                             .getText().toString();
