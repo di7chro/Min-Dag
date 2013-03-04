@@ -207,6 +207,10 @@ public class Start extends ListActivity {
                 showTTela.putExtra("KEY_LINK", "http://m.ttela.se");
                 startActivity(showTTela);
                 break;
+            case R.id.menuSchema:
+                Intent showSchema = new Intent(getApplicationContext(), Schema.class);
+                startActivity(showSchema);
+                break;
         }
         return false;
     }

@@ -23,7 +23,7 @@
             android:icon="@drawable/icon_mail"
             android:title="Öppna min mail"/>
     <item
-            android:id="@+id/menuMail"
-            android:icon="@drawable/icon_mail"
+            android:id="@+id/menuSchema"
+            android:icon="@drawable/icon_schema"
             android:title="Schema"/>
 </menu>
