@@ -55,7 +55,7 @@ public class TwitterFeed extends ListActivity {
             /* "http://search.twitter.com/search.json?q=from:University_West"); */
             try {
                 HttpClient hc = new DefaultHttpClient();
-                Log.i("Twitter", searchString);
+                Log.i("===========", searchString);
                 HttpGet get = new HttpGet(searchString);
                 HttpResponse rp = hc.execute(get);
                 if (rp.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {

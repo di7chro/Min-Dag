@@ -9,6 +9,11 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
 
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsMailHintText"
+                android:id="@+id/settingsMailHint" android:layout_gravity="left|center_vertical"/>
         <RadioButton
                 android:id="@+id/settingsRadioGmail"
                 android:layout_width="wrap_content"

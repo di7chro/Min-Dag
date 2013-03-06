@@ -62,11 +62,15 @@
     <string name="settingsMailEgenHint">Ange URL</string>
     <string name="settingsMailButtonText">Spara mitt val</string>
     <string name="settingTwitterOKButtonText">Spara mitt Twitter val</string>
-
+    <string name="settingsMailHintText">Här kan du välja vad som skall öppnas när du trycker "Öppna min mail" i menyn.
+        Du kan välja GMail, Live eller en egen sida där du läser dina mail. I sådana fall skriver du in URL till din
+        webbmail.
+    </string>
+    <string name="settingsSchemaHintText">Här skriver du in ditt programnamn.</string>
+    <string name="settingsSchemaButtonText">Spara schema</string>
+    <string name="menuSettingsSchemaTitle">Inställningar för schema</string>
     <!--
 
-        <string name=""></string>
-        <string name=""></string>
         <string name=""></string>
         <string name=""></string>
         <string name=""></string>

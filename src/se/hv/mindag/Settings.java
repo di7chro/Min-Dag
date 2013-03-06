@@ -14,7 +14,7 @@ import android.widget.ListView;
  * Time: 11:29
  */
 public class Settings extends ListActivity {
-    String items[] = {"Twitter inställningar", "Mail inställningar", "Spara inloggning"};
+    String items[] = {"Twitter inställningar", "Mail inställningar", "Spara inloggning", "Schema inställningar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,10 @@ public class Settings extends ListActivity {
             // Starting new intent
             Intent inSave = new Intent(this, SettingsLogin.class);
             startActivity(inSave);
+        } else if (position == 3) {
+            // Starting new intent
+            Intent inSchema = new Intent(this, SettingsSchema.class);
+            startActivity(inSchema);
         }
-
     }
 }

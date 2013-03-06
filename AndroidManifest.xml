@@ -103,6 +103,11 @@
                 android:clearTaskOnLaunch="true"
                 android:label="@string/schemaTitle">
         </activity>
+        <activity
+                android:name="se.hv.mindag.SettingsSchema"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/menuSettingsSchemaTitle">
+        </activity>
     </application>
 
 </manifest>
