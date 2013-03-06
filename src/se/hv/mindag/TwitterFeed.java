@@ -31,12 +31,15 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class TwitterFeed extends ListActivity {
+    String searchString;
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         new TwitterFeedDownloader().execute();
+        Intent in = getIntent();
+        searchString = in.getExtras().getString("STRING");
     }
 
     private class TwitterFeedDownloader extends AsyncTask<Void, Void, Void> {
@@ -52,8 +55,8 @@ public class TwitterFeed extends ListActivity {
             /* "http://search.twitter.com/search.json?q=from:University_West"); */
             try {
                 HttpClient hc = new DefaultHttpClient();
-                HttpGet get = new HttpGet(
-                        "http://search.twitter.com/search.json?q=hogskolan%20vast");
+                Log.i("Twitter", searchString);
+                HttpGet get = new HttpGet(searchString);
                 HttpResponse rp = hc.execute(get);
                 if (rp.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                     String result = EntityUtils.toString(rp.getEntity());

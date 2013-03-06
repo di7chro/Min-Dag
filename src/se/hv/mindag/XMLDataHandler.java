@@ -90,8 +90,10 @@ public class XMLDataHandler extends AsyncTask<String, Void, ArrayList> {
 			e.printStackTrace();
 		}
 		String returnString = ""; // = temp;
-		if (days == 1) {
-			returnString += Long.toString(days) + " dag sedan";
+		if (days == 0)
+            returnString += "Postat idag";
+        else if (days == 1) {
+			returnString += "Postat igår";
 		} else if (days > 1) {
 			returnString += Long.toString(days) + " dagar sedan";
 		}

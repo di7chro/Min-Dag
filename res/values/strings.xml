@@ -49,19 +49,22 @@
         Högskolans officiella ström, tweets taggade #hogskolan_vast eller en egen vald sökterm.
     </string>
     <string name="settingTwitterOfficialText">Högskolans officiella kanal</string>
-    <string name="settingTwitterTaggat">Taggat om Högskolan Väst</string>
-    <string name="settingTwitterEget">Egen sökterm</string>
+    <string name="settingTwitterTaggatText">Taggat om Högskolan Väst</string>
+    <string name="settingTwitterEgetText">Egen sökterm</string>
     <string name="settingMailHint">Ange vilken som skall vara din läsare för Webmail. Du kan välja mellan att öppna din
         GMail, Windows Live eller en egen vald webbmail.
     </string>
     <string name="settingMailGmail">GMail</string>
     <string name="settingMailLive">Live</string>
-    <string name="settingMailEget">Egen Webmail</string>
+    <string name="settingMailEget">Annat</string>
     <string name="menuTTelaTxt">Läs TTela</string>
     <string name="schemaTitle">Mitt Schema</string>
+    <string name="settingsMailEgenHint">Ange URL</string>
+    <string name="settingsMailButtonText">Spara mitt val</string>
+    <string name="settingTwitterOKButtonText">Spara mitt Twitter val</string>
+
     <!--
 
-        <string name=""></string>
         <string name=""></string>
         <string name=""></string>
         <string name=""></string>

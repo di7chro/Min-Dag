@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ import java.util.concurrent.ExecutionException;
  * @author imcoh
  */
 public class Start extends ListActivity {
+    public static final String PREFS_NAME = "MyPrefsFile";
+
     /**
      * Define the keys in the XML-feed we're interested in
      */
@@ -194,12 +197,17 @@ public class Start extends ListActivity {
                 break;
 
             case R.id.menuTwitter:
+                SharedPreferences settingsTwitter = getSharedPreferences(PREFS_NAME, 0);
+                String savedTwitter = settingsTwitter.getString("TWITTER", "http://search.twitter.com/search.json?q=hogskolan%20vast");
                 Intent showTwitter = new Intent("se.hv.mindag.TWITTER");
+                showTwitter.putExtra("STRING", savedTwitter);
                 startActivity(showTwitter);
                 break;
             case R.id.menuMail:
+                SharedPreferences settingsMail = getSharedPreferences(PREFS_NAME, 0);
+                String savedMail = settingsMail.getString("MAIL", "http://login.live.com");
                 Intent showMail = new Intent(getApplicationContext(), WebReader.class);
-                showMail.putExtra("KEY_LINK", "http://mail.google.com");
+                showMail.putExtra("KEY_LINK", savedMail);
                 startActivity(showMail);
                 break;
             case R.id.menuTTela:
