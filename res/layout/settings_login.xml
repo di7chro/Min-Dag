@@ -1,60 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/tableLayout1"
-             android:layout_width="fill_parent"
-             android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
     <TextView
             android:id="@+id/settingLoginTextHint"
             android:text="@string/settingLoginText"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"/>
-    <!-- 2 kolumner -->
-    <TableRow
-            android:id="@+id/settingLoginUserRow"
-            android:layout_width="wrap_content"
+    <EditText
+            android:id="@+id/settingsUsername"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dip">
+            android:inputType="text"
+            android:ems="10"
+            android:hint="@string/usernameHint">
 
-        <TextView
-                android:id="@+id/settingLoginUsernameText"
-                android:text="@string/settingsUsernameText"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <requestFocus/>
+    </EditText>
 
-        <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/settingsUsername" android:layout_column="1"/>
-    </TableRow>
-    <TableRow
-            android:id="@+id/settingLoginPassRow"
-            android:layout_width="wrap_content"
+    <EditText
+            android:id="@+id/settingsPassword"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dip">
+            android:ems="10"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"/>
 
-        <TextView
-                android:id="@+id/settingLoginPasswordText"
-                android:text="@string/settingsPasswordText"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
-
-        <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/settingsPassword" android:layout_column="1"/>
-    </TableRow>
-    <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
+    <Button
+            android:id="@+id/settingLoginButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dip">
+            android:text="@string/settingLoginOK"/>
 
-
-        <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/settingLoginOK"
-                android:id="@+id/settingLoginButton" android:layout_column="1"/>
-    </TableRow>
-
-</TableLayout>
+</LinearLayout>

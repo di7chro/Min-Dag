@@ -42,7 +42,8 @@
     <string name="settingsPasswordText">Password</string>
     <string name="settingLoginOK">Spara inloggning</string>
     <string name="settingLoginText">Ange dina inloggningsuppgifter för att komma åt dina resurser på Högskolan Väst. Du
-        skall ange samma uppgifter här som du använder för att komma åt Högskolans övriga resurser.
+        skall ange samma uppgifter här som du använder för att komma åt Högskolans övriga resurser. Om du vill ta bort
+        dina sparade uppgifter suddar du bort dina uppgifter och sparar.
     </string>
     <string name="settingsTwitterHint">Ange ditt val för vilken Twitterström du vill följa. Det kan antingen vara
         Högskolans officiella ström, tweets taggade #hogskolan_vast eller en egen vald sökterm.

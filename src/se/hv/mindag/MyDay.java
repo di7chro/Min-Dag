@@ -68,7 +68,7 @@ public class MyDay extends ListActivity {
             setListAdapter(adapter);
 
             ListView lv = (ListView) findViewById(R.id.myDayList);
-
+            /*
             for (int i = 0; i <= myDayItems.size(); i++) {
                 String theTag = myDayItems.get(i).get(KEY_TAG);
                 if (theTag.contains("schema")) {
@@ -83,6 +83,7 @@ public class MyDay extends ListActivity {
                 else
                     Log.i("TAG ANNAT", theTag);
             }
+            */
             // Wait for an item in the list to be clicked
             lv.setOnItemClickListener(new OnItemClickListener() {
 
