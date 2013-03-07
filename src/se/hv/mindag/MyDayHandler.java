@@ -72,7 +72,7 @@ public class MyDayHandler extends AsyncTask<String, Void, ArrayList> {
      */
     private String prettyfyDate(String theDate) {
         SimpleDateFormat format = new SimpleDateFormat(
-                "EEE, dd MMM yyyy HH:mm:ss z", Locale.getDefault());
+                "EEE, dd MMM yyyy HH:mm:ss z");
 
         Date past = null;
         try {
@@ -92,6 +92,8 @@ public class MyDayHandler extends AsyncTask<String, Void, ArrayList> {
                     theDate = diff / 60 / 24 + " dagar, " + diff % 24 + " timmar sedan";
             }
         } catch (ParseException e) {
+            /* Kunde inte parse'a datum, sätt det till Thu, 07 Mar */
+            theDate = theDate.substring(0, 11);
             e.printStackTrace();
         }
 

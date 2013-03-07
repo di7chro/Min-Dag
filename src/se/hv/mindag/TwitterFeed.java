@@ -93,11 +93,13 @@ public class TwitterFeed extends ListActivity {
      * feed. Counting the days since the notice has been published.
      *
      * @param theDate (Format: Thu, 21 Feb 2013 09:27:56 +0000)
+     *                Format:  Thu, 07 Mar 2013 10:09:52 +0000 från telefon)
+     *                Koden:   EEE, dd MMM yyyy HH:mm:ss z
      * @return Polished date
      */
     private String prettyfyDate(String theDate) {
         SimpleDateFormat format = new SimpleDateFormat(
-                "EEE, dd MMM yyyy HH:mm:ss z", Locale.getDefault());
+                "EEE, d MMM yyyy HH:mm:ss Z", Locale.getDefault());
 
         Date past = null;
         try {
@@ -118,6 +120,8 @@ public class TwitterFeed extends ListActivity {
             }
         } catch (ParseException e) {
             e.printStackTrace();
+            /* Kunde inte parse'a datum, sätt det till Thu, 07 Mar */
+            theDate = theDate.substring(0, 11);
         }
 
         return theDate;
