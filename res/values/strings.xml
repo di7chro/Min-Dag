@@ -66,7 +66,11 @@
         Du kan välja GMail, Live eller en egen sida där du läser dina mail. I sådana fall skriver du in URL till din
         webbmail.
     </string>
-    <string name="settingsSchemaHintText">Här skriver du in ditt programnamn.</string>
+    <string name="settingsSchemaHintText">Dessvärre är inte den här delen av appen klar ännu. Däremot var det riktigt
+        kul att du tryckte på den där Schema-knappen, men nu när du vet att det inte händer något när man trycker på den
+        antar jag att du inte kommer att göra det speciellt många fler gånger. Lite trist är det såklart, men jag antar
+        att det är så det skall vara när man är en snutt programkod som ingen brytt sig om att skriva klart.
+    </string>
     <string name="settingsSchemaButtonText">Spara schema</string>
     <string name="menuSettingsSchemaTitle">Inställningar för schema</string>
     <!--

@@ -12,7 +12,7 @@
             android:id="@+id/settingsSchemaHint"
             android:layout_gravity="left|center_vertical"/>
     <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/settingsSchemaInput" android:layout_gravity="left|center_vertical"/>
     <Button

@@ -99,7 +99,7 @@ public class TwitterFeed extends ListActivity {
      */
     private String prettyfyDate(String theDate) {
         SimpleDateFormat format = new SimpleDateFormat(
-                "EEE, d MMM yyyy HH:mm:ss Z", Locale.getDefault());
+                "EEE, d MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
 
         Date past = null;
         try {

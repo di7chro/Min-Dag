@@ -1,6 +1,8 @@
 package se.hv.mindag;
 
 import android.os.AsyncTask;
+import android.text.Html;
+import android.text.Spanned;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -12,7 +14,7 @@ import java.io.IOException;
  * point out wich DIV-tag we want to retrive. The result is stored in a String,
  * wich is returned as a result.
  *
- * @param url of a certain website
+ * @param  theURL of a certain website
  * @author imcoh
  * @return The String of text contained in a specific DIV-tag
  */
@@ -29,13 +31,12 @@ public class WebSinglePost extends AsyncTask<String, Void, String> {
                 Elements ele;
                 ele = doc.select("div.twocolumns");
                 html = ele.toString();
-            }
-            else if (url.contains("http://m.ttela.se")) {
+
+            } else if (url.contains("http://m.ttela.se")) {
                 Elements ele;
                 ele = doc.select("div#avdelning");
                 html = ele.toString();
-            }
-            else
+            } else
                 html = doc.toString();
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -44,4 +45,10 @@ public class WebSinglePost extends AsyncTask<String, Void, String> {
         return html;
     }
 
+    private String deUglify(String description) {
+        Spanned temp;
+        temp = Html.fromHtml(description);
+
+        return temp.toString();
+    }
 }
