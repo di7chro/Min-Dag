@@ -16,7 +16,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:layout_weight="1"
-                android:paddingTop="6dip"
+                android:paddingTop="2dip"
                 android:textColor="@color/general_title"
                 android:textSize="20sp"/>
 
@@ -49,6 +49,7 @@
             android:id="@+id/mydayLink"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:paddingBottom="10dp"/>
 
 </LinearLayout>

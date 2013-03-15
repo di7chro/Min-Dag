@@ -84,7 +84,7 @@ public class SettingsTwitter extends Activity {
                 if (chosen.contains("officiella"))
                     twitterSearch += "http://search.twitter.com/search.json?q=from:University_West";
                 else if (chosen.contains("Taggat"))
-                    twitterSearch += "http://search.twitter.com/search.json?q=hogskolanvast";
+                    twitterSearch += "http://search.twitter.com/search.json?q=from%3Ashv_thn%20OR%20%23högskolanväst%20OR%20hogskolanvast%20OR%20%23hv_thn";
                 //else if (chosen.contains("Egen"))
                 //    twitterSearch += egenURL.getText().toString();
 

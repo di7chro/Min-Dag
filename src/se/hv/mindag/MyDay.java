@@ -28,12 +28,13 @@ public class MyDay extends ListActivity {
     static final String KEY_DATE = "pubDate";
     static final String KEY_TAG = "tag";
 
+
     /*
-     * Fires up the activity_myday and waits for the Login-button to be pressed.
-     * Then it starts the ASynkTask to gather the XML-feed in the background.
-     * When this is done we can populate the ListAdapter with the stuff from the
-     * feed.
-     */
+         * Fires up the activity_myday and waits for the Login-button to be pressed.
+         * Then it starts the ASynkTask to gather the XML-feed in the background.
+         * When this is done we can populate the ListAdapter with the stuff from the
+         * feed.
+         */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,29 +69,31 @@ public class MyDay extends ListActivity {
             setListAdapter(adapter);
 
             ListView lv = (ListView) findViewById(R.id.myDayList);
+
+            lv.setOnItemClickListener(new ListView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    try {
+                        Toast.makeText(getApplicationContext(), "Tröckt",
+                                Toast.LENGTH_LONG).show();
+                    } catch (Exception e) {
+                        e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    }
+                }
+            });
+
             /*
-            for (int i = 0; i <= myDayItems.size(); i++) {
-                String theTag = myDayItems.get(i).get(KEY_TAG);
-                if (theTag.contains("schema")) {
-                    Log.i("TAG", "Schema hittad");
-                    // TextView tv = (TextView) myDayItems.get(i);
-                } else if (theTag.contains("kronox"))
-                    Log.i("TAG", "Kronox hittad");
-                else if (theTag.contains("ladok"))
-                    Log.i("TAG", "Ladok hittad");
-                else if (theTag.contains("disco"))
-                    Log.i("TAG", "Disco hittad");
-                else
-                    Log.i("TAG ANNAT", theTag);
-            }
-            */
             // Wait for an item in the list to be clicked
             lv.setOnItemClickListener(new OnItemClickListener() {
 
+
                 public void onItemClick(AdapterView<?> parent, View view,
                                         int position, long id) {
+                    Toast.makeText(getApplicationContext(), "Tröckt",
+                            Toast.LENGTH_LONG).show();
                     Log.i("XXX", "Sak tryckt");
                     // getting values from selected ListItem
+                    /*
                     String link = ((TextView) view.findViewById(R.id.mydayLink))
                             .getText().toString();
 
@@ -101,9 +104,11 @@ public class MyDay extends ListActivity {
                     // Pass the URL to the new Activity
                     in.putExtra("KEY_LINK", link);
                     startActivity(in);
+
                 }
             });
 
+            */
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
