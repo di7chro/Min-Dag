@@ -124,7 +124,7 @@ public class MyDayHandler extends AsyncTask<String, Void, ArrayList> {
             Element e = (Element) nl.item(i);
             // adding each child node to HashMap key => value
             map.put(KEY_TITLE, parser.getValue(e, KEY_TITLE));
-            map.put(KEY_TAG, parser.getValue(e, KEY_TAG));
+            map.put(KEY_TAG, "#" + parser.getValue(e, KEY_TAG));
             map.put(KEY_LINK, parser.getValue(e, KEY_LINK));
             map.put(KEY_DESC, deUglify(parser.getValue(e, KEY_DESC)));
             map.put(KEY_DATE, prettyfyDate(parser.getValue(e, KEY_DATE)));
