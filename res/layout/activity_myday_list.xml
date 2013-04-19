@@ -18,7 +18,7 @@
                 android:layout_weight="1"
                 android:paddingTop="2dip"
                 android:textColor="@color/general_title"
-                android:textSize="20sp"/>
+                android:textSize="20sp" android:text="Titel"/>
 
         <TextView
                 android:id="@+id/mydayTag"
@@ -27,7 +27,7 @@
                 android:gravity="right"
                 android:textColor="@color/general_title"
                 android:layout_weight="1"
-                android:textSize="15sp"/>
+                android:textSize="15sp" android:text="tagg"/>
     </LinearLayout>
     <TextView
             android:id="@+id/mydayDate"
